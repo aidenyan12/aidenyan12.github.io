@@ -13,7 +13,7 @@ name                     : &name "Aiden Yan"
 description              : &description "Research and Development of Advanced Anatomy System"
 url                      : "https://aidenyan.github.io"
 baseurl                  : ""
-repository               : "aidenyan12/aidenyan.github.io"
+repository               : "aidenyan/aidenyan.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -36,7 +36,7 @@ author:
   flickr           : 
   facebook         : 
   foursquare       : 
-  github           : "aidenyan12"
+  github           : "aidenyan"
   google_plus      : 
   keybase          : 
   instagram        : 
