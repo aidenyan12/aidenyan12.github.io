@@ -1,0 +1,4 @@
+{% assign base_path = site.url | append: site.baseurl %}
+{% unless base_path != "/" %}
+  {% assign base_path = "" %}
+{% endunless %}

@@ -1,0 +1,115 @@
+{% include base_path %}
+
+{% if site.author.avatar %}
+  <div class="author__avatar">
+    {% if site.author.avatar contains "://" %}
+      <img src="{{ site.author.avatar }}" alt="{{ site.author.name }}">
+    {% else %}
+      <img src="{{ site.author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ site.author.name }}">
+    {% endif %}
+  </div>
+{% endif %}
+
+<div class="author__content">
+  <h3 class="author__name">{{ site.author.name }}</h3>
+  {% if site.author.bio %}<p class="author__bio">{{ site.author.bio }}</p>{% endif %}
+</div>
+
+<div class="author__urls-wrapper">
+  <button class="btn btn--inverse">Follow</button>
+  <ul class="author__urls social-icons">
+    {% if site.author.location %}
+      <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ site.author.location }}</li>
+    {% endif %}
+    {% if site.author.employer %}
+      <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ site.author.employer }}</li>
+    {% endif %}
+    {% if site.author.uri %}
+      <li><a href="{{ site.author.uri }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> Website</a></li>
+    {% endif %}
+    {% if site.author.email %}
+      <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+    {% endif %}
+    {% if site.author.keybase %}
+      <li><a href="https://keybase.io/{{ site.author.keybase }}"><i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
+    {% endif %}
+     {% if site.author.researchgate %}
+      <li><a href="{{ site.author.researchgate }}"><i class="fa fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+    {% endif %}
+    {% if site.author.twitter %}
+      <li><a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    {% endif %}
+    {% if site.author.facebook %}
+      <li><a href="https://www.facebook.com/{{ site.author.facebook }}"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    {% endif %}
+    {% if site.author.google_plus %}
+      <li><a href="https://plus.google.com/+{{ site.author.google_plus }}"><i class="fa fa-fw fa-google-plus-square" aria-hidden="true"></i> Google+</a></li>
+    {% endif %}
+    {% if site.author.linkedin %}
+      <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+    {% endif %}
+    {% if site.author.xing %}
+      <li><a href="https://www.xing.com/profile/{{ site.author.xing }}"><i class="fa fa-fw fa-xing-square" aria-hidden="true"></i> XING</a></li>
+    {% endif %}
+    {% if site.author.instagram %}
+      <li><a href="https://instagram.com/{{ site.author.instagram }}"><i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+    {% endif %}
+    {% if site.author.tumblr %}
+      <li><a href="https://{{ site.author.tumblr }}.tumblr.com"><i class="fa fa-fw fa-tumblr-square" aria-hidden="true"></i> Tumblr</a></li>
+    {% endif %}
+    {% if site.author.bitbucket %}
+      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+    {% endif %}
+    {% if site.author.github %}
+      <li><a href="https://github.com/{{ site.author.github }}"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+    {% endif %}
+    {% if site.author.stackoverflow %}
+      <li><a href="https://www.stackoverflow.com/users/{{ site.author.stackoverflow }}"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
+    {% endif %}
+    {% if site.author.lastfm %}
+      <li><a href="https://lastfm.com/user/{{ site.author.lastfm }}"><i class="fa fa-fw fa-lastfm-square" aria-hidden="true"></i> Last.fm</a></li>
+    {% endif %}
+    {% if site.author.dribbble %}
+      <li><a href="https://dribbble.com/{{ site.author.dribbble }}"><i class="fa fa-fw fa-dribbble" aria-hidden="true"></i> Dribbble</a></li>
+    {% endif %}
+    {% if site.author.pinterest %}
+      <li><a href="https://www.pinterest.com/{{ site.author.pinterest }}"><i class="fa fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+    {% endif %}
+    {% if site.author.foursquare %}
+      <li><a href="https://foursquare.com/{{ site.author.foursquare }}"><i class="fa fa-fw fa-foursquare" aria-hidden="true"></i> Foursquare</a></li>
+    {% endif %}
+    {% if site.author.steam %}
+      <li><a href="https://steamcommunity.com/id/{{ site.author.steam }}"><i class="fa fa-fw fa-steam-square" aria-hidden="true"></i> Steam</a></li>
+    {% endif %}
+    {% if site.author.youtube %}
+      <li><a href="https://www.youtube.com/user/{{ site.author.youtube }}"><i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube</a></li>
+    {% endif %}
+    {% if site.author.soundcloud %}
+      <li><a href="https://soundcloud.com/{{ site.author.soundcloud }}"><i class="fa fa-fw fa-soundcloud" aria-hidden="true"></i> Soundcloud</a></li>
+    {% endif %}
+    {% if site.author.weibo %}
+      <li><a href="https://www.weibo.com/{{ site.author.weibo }}"><i class="fa fa-fw fa-weibo" aria-hidden="true"></i> Weibo</a></li>
+    {% endif %}
+    {% if site.author.flickr %}
+      <li><a href="https://www.flickr.com/{{ site.author.flickr }}"><i class="fa fa-fw fa-flickr" aria-hidden="true"></i> Flickr</a></li>
+    {% endif %}
+    {% if site.author.codepen %}
+      <li><a href="https://codepen.io/{{ site.author.codepen }}"><i class="fa fa-fw fa-codepen" aria-hidden="true"></i> CodePen</a></li>
+    {% endif %}
+    {% if site.author.vine %}
+      <li><a href="https://vine.co/{{ site.author.vine }}"><i class="fa fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
+    {% endif %}
+    {% if site.author.googlescholar %}
+      <li><a href="{{ site.author.googlescholar }}"><i class="fa fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+    {% endif %}
+    {% if site.author.pubmed %}
+      <li><a href="{{ site.author.pubmed }}"><i class="fa fa-fw fa-pubmed" aria-hidden="true"></i> PubMed</a></li>
+    {% endif %}
+    {% if site.author.orcid %}
+      <li><a href="{{ site.author.orcid }}"><i class="fa fa-fw fa-orcid" aria-hidden="true"></i> ORCID</a></li>
+    {% endif %}
+    {% if site.author.impactstory %}
+      <li><a href="{{ site.author.impactstory }}"><i class="fa fa-fw fa-impactstory" aria-hidden="true"></i> ImpactStory</a></li>
+    {% endif %}
+  </ul>
+</div>
