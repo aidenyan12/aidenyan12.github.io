@@ -163,75 +163,15 @@ html, body {
 }
 
 .projects-page .container {
-  display: block;
   background: transparent;
 }
 
 .projects-page .sidebar {
-  width: auto;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 32px 40px;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 30px;
-  background: transparent;
-  border: 0;
-}
-
-.projects-page .profile {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0;
-  text-align: left;
-}
-
-.projects-page .profile-img {
-  width: 48px;
-  height: 48px;
-  margin: 0;
-}
-
-.projects-page .profile h1 {
-  font-size: 1.1em;
-  white-space: nowrap;
-}
-
-.projects-page .profile p {
-  display: none;
-}
-
-.projects-page .sidebar nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin: 0;
-}
-
-.projects-page .sidebar nav li {
-  margin: 0;
-}
-
-.projects-page .sidebar nav a {
-  width: auto;
-  padding: 4px 0;
-  color: #000000;
-  border-radius: 0;
-  font-weight: normal;
-}
-
-.projects-page .sidebar nav a:hover,
-.projects-page .sidebar nav a.active {
-  background: transparent;
-  text-decoration: underline;
-}
-
-.projects-page .social {
-  margin: 0;
+  flex: 0 0 260px;
 }
 
 .projects-page .content {
+  min-width: 0;
   max-width: 1440px;
   margin: 0 auto;
   padding: 70px 40px 100px;
@@ -376,12 +316,14 @@ html, body {
   }
 
   .projects-page .sidebar {
+    flex: 0 0 auto;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 16px;
     padding: 20px;
   }
-  .projects-page .profile h1 {
+  .projects-page .profile {
+    flex-wrap: wrap;
     margin: 0;
   }
   .projects-page .sidebar nav {
@@ -389,10 +331,15 @@ html, body {
     width: 100%;
   }
   .projects-page .sidebar nav ul {
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 18px;
   }
+  .projects-page .sidebar nav li {
+    margin: 0;
+  }
   .projects-page .sidebar nav a {
+    width: auto;
     padding: 4px 0;
   }
   .projects-page .content {
