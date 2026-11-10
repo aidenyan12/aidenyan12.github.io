@@ -4,6 +4,7 @@ This directory contains images used throughout the site. In a real deployment, y
 
 ## Required Images
 
+- `artwork-preview-placeholder.gif` / `artwork-preview-placeholder.png` - Animated cover and reduced-motion still for the Selected Artworks placeholder. Replace both when artwork is available and update the caption and alt text in `projects.html`.
 - `profile.png` - Profile photo for the author bio
 - `yanamin-system.png` - Screenshot or diagram of the Yanamin Anatomy System
 - `ml-toolkit.png` - Visual representation of the ML toolkit

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projects by Yan Ka Man (Aiden Yan) in technology, research, art and aesthetic development." />
+    <meta name="description" content="Selected artworks and educational projects by Yan Ka Man (Aiden Yan)." />
     <title>Aiden Yan – Projects</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -33,14 +33,24 @@
       <!-- Main content area -->
       <main class="content">
         <h2>Projects</h2>
-        <p>Explore projects across technology, research and artistic practice.</p>
-        <p><a href="#technology-projects">Technology &amp; Research</a> | <a href="#art-projects-heading">Art &amp; Aesthetic Development</a></p>
-        <div class="project-columns">
-          <div class="technology-projects" id="technology-projects">
-            <h3>Technology &amp; Research Projects</h3>
+        <p>Explore selected artworks and educational projects.</p>
+        <p><a href="#art-projects-heading">Selected Artworks</a> | <a href="#technology-projects">Educational Projects</a></p>
+        <section class="art-projects" aria-labelledby="art-projects-heading">
+          <h3 id="art-projects-heading">Selected Artworks</h3>
+          <p>Exploring visual aesthetics, artistic practice and visual storytelling.</p>
+          <figure class="artwork-preview">
+            <picture>
+              <source srcset="images/artwork-preview-placeholder.png" media="(prefers-reduced-motion: reduce)" />
+              <img src="images/artwork-preview-placeholder.gif" alt="Abstract animated placeholder for an artwork preview" width="720" height="400" />
+            </picture>
+            <figcaption>Artwork preview placeholder — selected works coming soon.</figcaption>
+          </figure>
+        </section>
+        <section class="educational-projects" id="technology-projects" aria-labelledby="educational-projects-heading">
+          <h3 id="educational-projects-heading">Educational Projects</h3>
         <!-- VR Anatomy and Animal Dissection System -->
-        <section>
-          <h4>VR Anatomy &amp; Animal Dissection System</h4>
+        <details>
+          <summary>VR Anatomy &amp; Animal Dissection System</summary>
           <p>
             As part of my role at the Hong Kong University of Science and Technology (HKUST), I developed and managed a virtual reality anatomy and animal dissection platform for the course
             <em>LIFS1904 Laboratory for General Biology</em>. Serving more than 300 life‑science students, the system employs immersive VR to replace physical dissections, offering a
@@ -53,10 +63,10 @@
           </ul>
           <!-- Placeholder for project image -->
           <!-- <img src="images/vr-anatomy.jpg" alt="VR Anatomy system screenshot" /> -->
-        </section>
+        </details>
         <!-- Virtual Laboratory Simulations -->
-        <section>
-          <h4>Virtual Laboratory Simulations</h4>
+        <details>
+          <summary>Virtual Laboratory Simulations</summary>
           <p>
             I coordinated a suite of Virtual Laboratory Simulations (VLS) for STEM education, preparing students for hands‑on laboratory work through scaffolded, interactive training. The
             program included A/B testing and data analytics from external developers to continually improve learning outcomes.
@@ -66,10 +76,10 @@
             <li><strong>Role:</strong> Project manager and evaluation lead</li>
             <li><strong>Impact:</strong> Delivered quantitative and qualitative data to stakeholders; enhanced student readiness for physical labs</li>
           </ul>
-        </section>
+        </details>
         <!-- AR/XR Virtual Sets -->
-        <section>
-          <h4>AR/XR Virtual Sets for Education</h4>
+        <details>
+          <summary>AR/XR Virtual Sets for Education</summary>
           <p>
             At the Shaw Auditorium, HKUST, I developed augmented and extended reality virtual sets to enhance teaching and learning experiences. These sets provided immersive backdrops for
             lectures and performances, blending physical and digital spaces seamlessly.
@@ -79,10 +89,10 @@
             <li><strong>Role:</strong> Developer and instructor for Technical Theatre Arts</li>
             <li><strong>Impact:</strong> Empowered educators to deliver engaging STEM content with interactive environments</li>
           </ul>
-        </section>
+        </details>
         <!-- AIoT Solutions Platform -->
-        <section>
-          <h4>AIoT Solutions &amp; Real‑time Monitoring Platform</h4>
+        <details>
+          <summary>AIoT Solutions &amp; Real‑time Monitoring Platform</summary>
           <p>
             As co‑founder of VisuTech Asia Limited, I designed an all‑in‑one AIoT platform integrating customised sensors and a cloud‑based dashboard for real‑time monitoring. Clients included
             Vitasoy, HK District Cooling, and the Giotto Group.
@@ -92,10 +102,10 @@
             <li><strong>Role:</strong> Co‑founder and chief architect</li>
             <li><strong>Impact:</strong> Provided data‑driven insights for industrial partners and built long‑term collaborations</li>
           </ul>
-        </section>
+        </details>
         <!-- Educational Technology Projects -->
-        <section>
-          <h4>Educational Technology &amp; Digital Law Projects</h4>
+        <details>
+          <summary>Educational Technology &amp; Digital Law Projects</summary>
           <p>
             While consulting for the HKU Faculty of Law, I evaluated and supported digital teaching initiatives for courses on the Rule of Law and Intellectual Property. I supervised the
             production of MOOCs, designed online examination systems for PCLL students and organised technical support for public seminars.
@@ -105,10 +115,10 @@
             <li><strong>Role:</strong> Educational technology consultant</li>
             <li><strong>Impact:</strong> Enabled high‑quality online legal education and streamlined remote assessment</li>
           </ul>
-        </section>
+        </details>
         <!-- AI and Machine Learning Projects -->
-        <section>
-          <h4>AI &amp; Machine Learning Infrastructure</h4>
+        <details>
+          <summary>AI &amp; Machine Learning Infrastructure</summary>
           <p>
             At HKU’s Arts Technology Lab I oversee GPU servers used for linguistic and machine‑learning research. Projects include fine‑tuning large language models for analysing Cantonese
             corpora and providing computational resources for arts researchers.
@@ -118,14 +128,8 @@
             <li><strong>Role:</strong> Systems administrator and ML engineer</li>
             <li><strong>Impact:</strong> Facilitated cutting‑edge research in computational linguistics and creative AI</li>
           </ul>
+        </details>
         </section>
-          </div>
-          <section class="art-projects" aria-labelledby="art-projects-heading">
-            <h3 id="art-projects-heading">Art &amp; Aesthetic Development</h3>
-            <p>An ongoing exploration of visual aesthetics and artistic practice, with an interest in composition, color, form, and visual storytelling.</p>
-            <p>Art projects will be added here.</p>
-          </section>
-        </div>
       </main>
     </div>
   </body>
