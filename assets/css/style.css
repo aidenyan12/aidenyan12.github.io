@@ -157,6 +157,27 @@ html, body {
   margin-bottom: 8px;
 }
 
+.project-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.project-columns h3 {
+  margin-top: 0;
+}
+
+.technology-projects h4 {
+  margin: 30px 0 0;
+  font-size: 1.2em;
+}
+
+.art-projects {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
 .timeline {
   position: relative;
   padding-left: 20px;
@@ -182,6 +203,12 @@ html, body {
 }
 
 /* Responsiveness */
+@media (max-width: 900px) {
+  .project-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
