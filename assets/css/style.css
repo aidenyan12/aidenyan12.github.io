@@ -158,8 +158,10 @@ html, body {
 }
 
 .projects-page {
+  height: auto;
+  min-height: 100vh;
   color: #000000;
-  background: linear-gradient(to bottom, #d9ffff 0, #e3fffc 500px, #f1fff9 1000px, #fdfff9 1500px, #ffffff 2000px) no-repeat, #ffffff;
+  background: linear-gradient(to bottom, #d9ffff 0%, #e3fffc 25%, #f1fff9 50%, #fdfff9 75%, #ffffff 100%) no-repeat, #ffffff;
 }
 
 .projects-page .container {
