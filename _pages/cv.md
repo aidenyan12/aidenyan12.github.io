@@ -47,6 +47,10 @@ Skills
   * Scientific Writing
   * Project Management
 
+Art & Aesthetic Development
+======
+An ongoing exploration of visual aesthetics and artistic practice, with an interest in composition, color, form, and visual storytelling.
+
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
