@@ -7,7 +7,7 @@
     <title>Aiden Yan – Projects</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body class="projects-page">
     <div class="container">
       <!-- Sidebar with profile, navigation and social links -->
       <aside class="sidebar">
@@ -37,17 +37,20 @@
         <p><a href="#art-projects-heading">Selected Artworks</a> | <a href="#technology-projects">Educational Projects</a></p>
         <section class="art-projects" aria-labelledby="art-projects-heading">
           <h3 id="art-projects-heading">Selected Artworks</h3>
-          <p>Exploring visual aesthetics, artistic practice and visual storytelling.</p>
-          <figure class="artwork-preview">
-            <picture>
-              <source srcset="images/artwork-preview-placeholder.png" media="(prefers-reduced-motion: reduce)" />
-              <img src="images/artwork-preview-placeholder.gif" alt="Abstract animated placeholder for an artwork preview" width="720" height="400" />
-            </picture>
-            <figcaption>Artwork preview placeholder — selected works coming soon.</figcaption>
-          </figure>
+          <div class="project-section-content">
+            <p>Exploring visual aesthetics, artistic practice and visual storytelling.</p>
+            <figure class="artwork-preview">
+              <picture>
+                <source srcset="images/artwork-preview-placeholder.png" media="(prefers-reduced-motion: reduce)" />
+                <img src="images/artwork-preview-placeholder.gif" alt="Abstract animated placeholder for an artwork preview" width="720" height="400" />
+              </picture>
+              <figcaption>Artwork preview placeholder — selected works coming soon.</figcaption>
+            </figure>
+          </div>
         </section>
         <section class="educational-projects" id="technology-projects" aria-labelledby="educational-projects-heading">
           <h3 id="educational-projects-heading">Educational Projects</h3>
+          <div class="project-section-content">
         <!-- VR Anatomy and Animal Dissection System -->
         <details>
           <summary>VR Anatomy &amp; Animal Dissection System</summary>
@@ -129,6 +132,7 @@
             <li><strong>Impact:</strong> Facilitated cutting‑edge research in computational linguistics and creative AI</li>
           </ul>
         </details>
+          </div>
         </section>
       </main>
     </div>
