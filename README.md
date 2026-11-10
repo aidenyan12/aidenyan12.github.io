@@ -34,7 +34,7 @@ Our project aims to revolutionize anatomical research and education through:
 
 ## Website
 
-This repository powers our project website at [https://aidenyan.github.io](https://aidenyan.github.io), which includes:
+This repository powers our website at [https://aidenyan12.github.io](https://aidenyan12.github.io), which includes:
 
 - Project documentation and research findings
 - Publications and presentations
@@ -44,13 +44,13 @@ This repository powers our project website at [https://aidenyan.github.io](https
 
 ## Technical Information
 
-The website is built using Jekyll and hosted on GitHub Pages, ensuring accessibility and ease of maintenance. The site follows academic presentation standards and is optimized for both desktop and mobile viewing.
+The published website uses the root HTML files and `assets/css/style.css`, hosted on GitHub Pages. The `.nojekyll` file disables Jekyll processing, so changes to the Jekyll source under `_pages` are not reflected on the live site.
 
 ## Getting Started
 
 To explore our work:
 
-1. Visit our [website](https://aidenyan.github.io)
+1. Visit our [website](https://aidenyan12.github.io)
 2. Browse our publications and research findings
 3. Check out our talks and presentations
 4. Explore our educational materials
@@ -67,4 +67,3 @@ For inquiries about collaboration, research partnerships, or technical questions
 ---
 
 *The Yanamin Anatomy System project is dedicated to advancing anatomical science through innovative technology and collaborative research.*
-
